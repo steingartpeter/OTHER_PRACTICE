@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/> 
+	<link type="text/css" rel="stylesheet" href="/GYAKORLAS/EKAER2_ABRA/style/baseStyle.css" />
+</head>
+
+<body>
+
+	<div class="sql-table" id="tbl-vttk">
+		<table>
+			<tr><th colspan="2" title="Szálltmányok HEADER tábla">VTTK</th></tr>
+			<tr><td class="key-out" title="Szállítmányszám: 0000099999">TKNUM</td><td class="key-out">Shipment Number</td></tr>
+			<tr><td title="Szállítmány tipusa: Individual shipment SAPPR">SHTYP</td><td>Shipment type</td></tr>
+			<tr><td title="Útvonal:AT-DIR/AT-MUL/AT-50/AT-40/AT-80/AT-10/CZ-76/SK-17/HU-15">ROUTE</td><td>Shipment route</td></tr>
+			<tr><td title="Szállítmányzárás dátuma">DTABF</td><td>Date of shipm. completion</td></tr>
+		</table>
+	</div>
+
+	<div class="sql-table" id="tbl-vekp">
+		<table>
+			<tr><th colspan="2" title="Kiszállítási egységek - HEADER tábla">VEKP</th></tr>
+			<tr><td class="key-in" title="Szállítmányszám: 0000099999">VPOBJKEY</td><td class="key-in">Shipment Number</td></tr>
+			<tr><td class="key-out" title="SAP HU id 12345678">VENUM</td><td class="key-out">Internal HU Nr.</td></tr>
+			<tr><td title="Általánosan használt HU id: 22212345678">EXIDV</td><td>External HU Id.</td></tr>
+			<tr><td title="A HU teljes súlya - anyagokkal együtt">BRGEW</td><td>Tot. Wght. HU.</td></tr>
+			<tr><td title="Súly egység G/KG alapértelmezésben G, 20 karakteren">GEWEI</td><td>Weight Unit</td></tr>
+			<tr><td title="A HU tipusa, pl: NEWPLASTICBOX, vagy RCL/RCS...">VHILM</td><td>Packaging Materials</td></tr>
+			<tr><td title="A kereskedők 9 karakteres azonosítója + U/S jelzés">EXIDV2</td><td>HU's 2nd External Id.</td></tr>
+		</table>
+	</div>
+	
+	<div class="sql-table" id="tbl-vepo">
+		<table>
+			<tr><th colspan="2" title="Kiszállítási egységek tartalmának táblája.">VEPO</th></tr>
+			<tr><td class="key-in" title="SAP HU id 12345678">VENUM</td><td class="key-in">Internal HU Number</td></tr>
+			<tr><td class="key-out" title="A DELIVERY id-je a SAPban.">VBELN</td><td class="key-out">Delivery</td></tr>
+			<tr><td title="A delivery-tétel azonosítója.">POSNR</td><td>Delivery item</td></tr>
+			<tr><td title="A cikkszám.">MATNR</td><td>Material Number</td></tr>
+			<tr><td title="A kiszállítási egyslgben lévő darabszám.">VEMNG</td><td>Packed quantity</td></tr>
+		</table>
+	</div>
+	
+
+	<div class="sql-table" id="tbl-lips">
+		<table>
+			<tr><th colspan="2" title="Delivery itemek táblája.">LIPS</th></tr>
+			<tr><td class="key-in" title="A delivery id.je.">VBELN</td><td class="key-in">Delivery</td></tr>
+			<tr><td class="key-out" title="A cikkszám-készlet tulajdonosa(RE85/HU01/NI01).">WERKS</td><td class="key-out">Plant</td></tr>
+			<tr><td class="key-out" title="Cikkszám.">MATNR</td><td class="key-out">Material Nr.</td></tr>
+			<tr><td title="A kiküldött mennyiség.">LFIMG</td><td>Act. qutty. delivered</td></tr>
+			<tr><td title="A tétel teljes súlya.">BRGEW</td><td>Gross weight</td></tr>
+			<tr><td title="A tétel darabszáma">GEWEI</td><td>Weight Unit</td></tr>
+		</table>
+	</div>
+	
+	<div class="sql-table" id="tbl-marc">
+		<table>
+			<tr><th title="A cikkszámok PLANT adatinak táblája." colspan="2">MARC</th></tr>
+			<tr><td title="A cikkszám tulajdonosa." class="key-in">WERKS</td><td class="key-in">Plant</td></tr>
+			<tr><td title="A cikkszám." class="key-in">MATNR</td><td class="key-in">Material Nr.</td></tr>
+			<tr><td title="A vám tarifa szám." >STAWN</td><td>Import Code for FT.</td></tr>
+		</table>
+	</div>
+
+	
+	
+</body>
+
+</html>

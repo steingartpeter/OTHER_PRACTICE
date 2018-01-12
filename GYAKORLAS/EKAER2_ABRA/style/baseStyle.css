@@ -1,0 +1,63 @@
+body{
+	background-color:#5C5C5C;
+	position:relative;
+}
+div.sql-table{
+	position:absolute;
+	border:3px #EFEFEF solid;
+	border-radius: 5px;
+	background-color:#AFAFAF;
+	box-shadow:4px 4px 8px #050505;
+}
+.sql-table table{
+	min-width:250px;
+}
+td.key-out{
+	color:#2525FF;
+	background-color:#CDCDDD;
+}
+td.key-out:hover{
+	color:#1212AA;
+	font-weight:bold;
+	background-color:#BCBCEE;
+}
+td.key-in{
+	color:#259925;
+	background-color:#CDDDCD;
+}
+td.key-in:hover{
+	color:#156615;
+	font-weight:bold;
+	background-color:#BCCCBC;
+}
+
+
+#tbl-vttk{
+	left:125px;
+	top:75px;
+}
+
+#tbl-vekp{
+	left:395px;
+	top:155px;
+}
+#tbl-vepo{
+	left:125px;
+	top:235px;
+}
+#tbl-lips{
+	left:395px;
+	top:385px;
+}
+#tbl-marc{
+	left:125px;
+	top:415px;	
+}
+div.sql-table th{
+	background-color:#CDCDCD;
+	font-weight:bold;
+	
+}
+div.sql-table td{
+	border: 1px dotted #EFEFEF;
+}
