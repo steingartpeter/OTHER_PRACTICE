@@ -3,3 +3,15 @@ body{
 	margin:0 auto;
 	width:75%
 }
+a.btn{
+	padding:6px;
+	background-color: #CDCDFF;
+	border:1px #FF00FF solid;
+}
+a.btn:hover{
+	padding:6px;
+	background-color: #BABAEE;
+	border:2px #AA00AA solid;
+	box-shadow:2px 2px 4px #959580;
+	cursor: pointer;
+}
