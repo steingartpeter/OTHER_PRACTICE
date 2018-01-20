@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+html{
+	background-color: #050505;
+}
+body{
+	width:75%; 
+	margin:auto;
+	padding:35px;
+	background: #CFCFCF;
+	border-left:#050505 1px solid;
+	border-right:#050505 1px solid;
+}
+.hdr{
+	min-height: 50px;
+}
+.bdy{
+	min-height: 50px;
+}
+.ftr{
+	min-height: 50px;
+	color:#A0A0A0;
+	font-style: italic;
+	border:#050505 1px solid;
+	border-radius:30px;
+	box-shadow: 4px 4px 8px #030303;
+	text-align: center;
+}
+input[type=text]{
+	margin-left:15px;
+}
+input[type=submit]{
+	margin:10px;
+}
+.std-btn{
+	background-color: #0180C4;
+	padding:8px;
+	font-size:12px;
+	font-family:Consolas;
+	border-radius:8px;
+}
+#rdyStr{
+	width:850px;
+}
+select{
+	margin-left:25px;
+}
